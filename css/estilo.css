@@ -1,0 +1,219 @@
+* {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+body {
+	background: beige;
+}
+
+.general__header{
+	background-image: url("../assets/img/chocolate.jpg");
+ 	height: 450px; 
+ 
+  	background-attachment: fixed; 
+  	background-position: center; 
+  	background-repeat: repeat;
+  	background-size: cover; 
+	
+  	margin-bottom:100px;
+}
+
+h1.header__title {
+	color: rgba(168, 50, 37, 1);;
+    font-size:	80px;
+    font-weight: bold;	
+    text-align: center;
+    padding: 70px;
+    margin: 75px;
+    border: 50px;
+    
+
+ }
+
+ul{
+    
+	display: flex;
+	justify-self: space-evenly;
+	color: rgba(168, 50, 37, 1); 
+	list-style-type: upper-roman;
+	text-decoration: underline;
+	text-decoration: none;
+	font-size: 20px; 
+}  
+.header__list__article {
+	
+	display: flex;
+	justify-content: flex-start;
+	color: rgba(168, 50, 37, 1);
+    text-decoration: overline;
+    font-size: 30px;
+     padding: 20px;
+    margin: 25px;
+    border: 20px;
+}
+
+.local__list {
+
+   display: flex;
+  justify-content: space-evenly;
+
+}
+
+  
+
+p {
+    color: gold;
+    text-align: left;
+    font-size: 90px;
+    }
+footer {
+	word-spacing: 7px;
+	font-weight: bold;
+    font-size: 70px;
+    color: rgba(168, 50, 37, 1);
+    margin-top: 400px;
+}
+
+
+
+
+div{	
+	display: flex;
+	flex-direction: column;
+    color: rgba(168, 50, 37, 1);}
+
+
+h3{
+	display: flex;
+	justify-self: safe flex-start;
+	flex-direction: row;
+	word-spacing: 50px;
+    color: black;
+}   
+
+
+}    
+form{
+	color: ghostwhite;
+}
+tr {
+	color: ghostwhite;
+}
+body p{
+	font-size: 50px;
+}
+
+.container{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+.flex-direction{
+    flex-direction: row-reverse;
+}
+.align-items{
+align-items: center;
+}
+
+.w-500{
+width: 500px;
+}
+
+.box{
+    padding: 20px;
+    text-align:center;
+    color: whitesmoke;
+    font-size: 1em;
+    font-family: Nunito;
+}
+.bg-black{
+    background-color: black;
+}
+.bg-red{
+    background-color:#8e2f2f;
+}
+.bg-orange{
+    background-color:#cea34e;
+}
+.textDark{
+    color: #242424;
+    font-weight: bolder;
+    text-align: center;
+    clear: both;
+    margin: 5px;
+}
+.justify-content{
+    justify-content: space-evenly;
+}
+
+.grid{
+    width: 99%;
+    display: grid;
+}
+.grid-template-columns-row{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 30vh 30vh 30vh;
+  /*  grid-column-gap: 10px;
+    grid-row-gap: 10px; */
+    grid-gap: 10px;
+   height: 50vh;
+}
+.linear-gradient{
+    background: linear-gradient(to left,#8e2f2f,#cea34e);
+}
+.transform:hover {
+transform: translateY(-20px);
+cursor: pointer;
+}
+.rotate:hover{
+    transform: rotateZ(80deg);
+    cursor: pointer;
+    transition: transform 2s;
+}
+.scale:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: transform 2s;
+}
+.skew:hover{
+    transform: skewX(10deg);
+    cursor: pointer;
+    transition: transform 2s;
+}
+@keyframes animateDiv{
+    0% {width: 500px;}
+    25% {width: 800px;}
+    50% {width: 1000px;}
+    75% {width: 800px;}
+    100% {width: 500px;}
+}
+
+.animate{
+background-color:#8e2f2f;
+animation-name: animateDiv;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 5s;
+}
+@keyframes textAlpha{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+p{
+    animation-name: textAlpha;
+    animation-duration: 5s;
+}
+
+@media only screen and (min-width: 768px){
+body{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 20vh 70vh 10vh;
+}    
+}
+@media only screen and (min-width: 1200px){
+    body{
+grid-template-columns: repeat(2,30%);
+grid-template-rows: 20vh 70vh 10vh;
+    }
+}
